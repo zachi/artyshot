@@ -1,0 +1,17 @@
+﻿
+***************ImgGallery*********************
+
+ - V דף הביץ -> ראשי
+ - add new file
+ - center other services
+ - fix IE7 load
+ - IE6
+ - V gallery fix  images hirarchy
+ - V gallery animate photo swap 
+ - gallery scrolling
+ - gallery change image animation
+ - V remove Default.aspx and UserControls
+ - set source control???
+ - Day flow arrangement
+ - youtube video first image
+ - SEO
