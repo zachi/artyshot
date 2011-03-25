@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /Files/albums_reservation.pdf
+Disallow: /Files/video_editing.pdf
+Disallow: /Files/contract.pdf
+Allow: /
+
