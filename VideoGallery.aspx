@@ -1,26 +1,13 @@
 ﻿<%@ Page Title="וידאו - רגעים מנצחים, צילום אירועים" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="VideoGallery.aspx.cs" Inherits="VideoGallery" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script type="text/javascript">
-    function ChangeVideo(eventElement) {
-        //    var eventElement = event.srcElement != null ? event.srcElement : event.target;
-        jQuery('.VideoThumbnail, .VideoThumbnailSelected').removeClass('VideoThumbnailSelected');
-        jQuery(eventElement).addClass('VideoThumbnailSelected');
-        var newDisplayedVideo = jQuery("#" + eventElement.id.replace('VideoThumbnail', 'VideoContainer'));
-        var previousDisplayedVideo = jQuery(".VideoContainer, .Show");
-        previousDisplayedVideo.addClass("Hide");
-        previousDisplayedVideo.removeClass("Show");
-
-        newDisplayedVideo.addClass("Show");
-        newDisplayedVideo.removeClass("Hide");
-    }
-        
-</script>
-
 <div class="Video">
 
     <div class="VideoThumbnails">
         <div id="VideoThumbnail_1" class="VideoThumbnail VideoThumbnailSelected" onclick="ChangeVideo(this)">
+            <img src="Images/Video/clip_hatuna.jpg" />
+        </div>
+        <div id="VideoThumbnail_12" class="VideoThumbnail" onclick="ChangeVideo(this)">
             <img src="Images/Video/clip_hatuna.jpg" />
         </div>
         <div id="VideoThumbnail_2" class="VideoThumbnail" onclick="ChangeVideo(this)">
@@ -40,7 +27,11 @@
         </div>
     </div>
     <div id="VideoContainer_1" class="VideoContainer Border Show">
-      <object width="650" height="400"><param name="movie" value="http://www.youtube.com/v/Jxc_TTs0WAU&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Jxc_TTs0WAU&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="650" height="400"></embed></object></div>
+      <object width="650" height="400"><param name="movie" value="http://www.youtube.com/v/Jxc_TTs0WAU&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Jxc_TTs0WAU&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="650" height="400"></embed></object>
+    </div>
+    <div id="VideoContainer_12" class="VideoContainer Border Hide">
+      <object width="650" height="400"><param name="movie" value="http://www.youtube-nocookie.com/v/Z3OrimRnbIs?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube-nocookie.com/v/Z3OrimRnbIs?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="650" height="400"></embed></object>
+    </div>
     <div id="VideoContainer_2" class="VideoContainer Border Hide">
       <object width="650" height="400"><param name="movie" value="http://www.youtube.com/v/7xkKxHCdg2k&amp;hl=en_US&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/7xkKxHCdg2k&amp;hl=en_US&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="650" height="400"></embed></object> 
     </div>

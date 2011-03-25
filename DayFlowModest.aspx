@@ -17,7 +17,7 @@
     <div class="DayFlow">
         <div class="ContentBlock" style="padding-left: 30px;">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/1d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/1d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">צילומי חתן כלה</span> <span>הצילומים יחלו כשעתיים לפני הזמן
                     שנקבע לקבלת הפנים בשעה הראשונה יצולמו הכלה והחתן, כל אחד בנפרד במקום שנקבע מראש
@@ -27,7 +27,7 @@
         </div>
         <div class="ContentBlock">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/2d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/2d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">צילומי משפחות</span> <span>בשעה השנייה יצולמו המשפחות הגרעיניות
                     של הכלה והחתן. חשוב לנו מאוד להכיר את השחקנים הראשיים באירוע על מנת שניתן להם את
@@ -37,7 +37,7 @@
         </div>
         <div class="ContentBlock" style="padding-left: 30px;">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/3d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/3d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">קבלת הפנים/ כסא כלה</span> <span>באירוע עצמו, זמן קבלת הפנים
                     הוא הזמן הטוב ביותר לייצר תמונות משפחתיות( של המשפחה המורחבת) וכן צילומים עם חברים
@@ -48,7 +48,7 @@
         </div>
         <div class="ContentBlock">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/4d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/4d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">החופה</span> <span> יצולמו כל הליוויים לחופה באופן המרגש
                     שבו מתחשים האירועים אנו נדאג בזמן החופה לא להסתיר למוזמנים ולהשאיר חופה פתוחה לרווחה.
@@ -58,7 +58,7 @@
         </div>
         <div class="ContentBlock" style="padding-left: 30px;">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/5d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/5d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">צילומי חדר ייחוד</span> <span>הזוג יקבע מראש את זמן הגעת
                     הצלמים לחדר הייחוד, שם נצלם תמונות זוגיות זורמות ויצוגיות. כמו כן נערוך צילומי משפחות כרבע שעה לאחר סיום החופה
@@ -67,7 +67,7 @@
         </div>
         <div class="ContentBlock">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/6d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/6d.jpg" /></div>
             <p>
                 <span class="DayFlowTitle">ריקודים</span> <span>הכלה והחתן מהווים את מרכז המעגל, והם
                     יצולמו עם כל מי שרוקד עימם כמובן שזהו גם זמן מצויין לעוד צילומים עם חברים ומשפחה
@@ -76,7 +76,7 @@
         </div>
         <div class="ContentBlock" style="padding-left: 30px;">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/7d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/7d.jpg" /></div>
             <p>
                 <span>סבב שולחנות יעשה עם הזוג או ע"פ רשימת שולחנות חשובים לצילום שהזוג ישלח מבעוד מועד
                 </span>
@@ -84,7 +84,7 @@
         </div>
         <div class="ContentBlock">
             <div class="Border" style="width: 303px;">
-                <img src="Images/DayFlow/Modest/8d.jpg" /></div>
+                <img src="/Images/DayFlow/Modest/8d.jpg" /></div>
             <p>
                 <span>אנו נדאג שהאוירה תהיה רגועה וחיובית, הצלמים יהיו נעימים וצנועים, הצילומים
                     יהיו ספונטניים ואומנותיים והעיקר שלא יחסר דבר. </span>

@@ -5,10 +5,10 @@
 <div style="width:460px; margin:0 auto; text-align:center;padding-bottom:140px;">
    
     <div style="float:right;padding-left:70px;">
-     <a href="DayFlowModest.aspx"><img title="חתונה בהפרדה" alt="חתונה בהפרדה" src="Images/DayFlow/Modest.jpg" /></a>
+     <a href="/DayFlowSelection/Modest"><img title="חתונה בהפרדה" alt="חתונה בהפרדה" src="/Images/DayFlow/Modest.jpg" /></a>
     </div> 
     <div style="float:right;">
-    <a href="DayFlowCommon.aspx"><img title="חתונה מעורבת" alt="חתונה מעורבת" src="Images/DayFlow/Common.jpg" /></a>
+    <a href="/DayFlowSelection/Common"><img title="חתונה מעורבת" alt="חתונה מעורבת" src="/Images/DayFlow/Common.jpg" /></a>
     </div>
     <div style="clear:both;"></div>
 </div>

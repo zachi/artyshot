@@ -4,67 +4,45 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <meta name="description" content="חברה לצילום אירועים" /> 
+    <meta name="description" content="רגעים מנצחים, חברה לצילום אירועים" /> 
     <meta name="keywords" content="צלמי חתונה,צלמי חתונות,צלמי אירועים,צילום אירועים,צילום סטילס,צילום וידאו,צילום חתונה,צילומי הריון,צלמת הריון,צלמת חתונה,צילומי ילדים,צלמי ילדים,צלמת ילדים,מיטל גנוט,מיטל כהן גנוט,מיטל ויואב גנוט,יואב גנוט,רגעים מנצחים,ארטי שוט" /> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <link rel="Stylesheet" type="text/css" href="StyleSheet.css" />
-    <script type="text/javascript" src="javascript/jquery-1.3.2.min.js"></script>
+	
+    <link rel="Stylesheet" type="text/css" href="/StyleSheet.css" />
+    <script type="text/javascript" src="/javascript/jquery-1.3.2.min.js"></script>
     <script src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-        google.load("jqueryui", "1.5.2");
-        jQuery(document).ready(function () {
-            $('.FadeOnHover').hover(
-                function () {
-                    $(this).animate({ backgroundColor: '#EAEAEA', color: '#0a3768' }, { queue: false, duration: 500 });
-                }, function () {
-                    $(this).animate({ backgroundColor: 'White', color: '#4f647c' }, { queue: false, duration: 500 });
-                });
-        });
-
-    </script>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-22016740-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-</script>
+    <script type="text/javascript" src="/javascript/artyshot.js"></script>
 </head>
 <body>
     <div style="margin: 0 auto; width: 900px; direction: rtl;">
         <form id="form1" runat="server">
                 <div class="Menu">
-                    <a href="Main.aspx"> <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="Images/logo_black_small.png" /></a>
+                    <a href="/Main"> <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
                     <div class="MenuElement" style="width:65px;">
-                    <a href="Main.aspx" runat="server" id="hrfMain" class="MenuLink FadeOnHover">ראשי</a> 
+                    <a href="/Main" runat="server" id="hrfMain" class="MenuLink FadeOnHover">ראשי</a> 
                     </div>
                     <div class="MenuElement" style="width:120px;">
-                    <a href="ImgGallery.aspx"  runat="server" id="hrfImgGallery"  class="MenuLink FadeOnHover">גלרית תמונות</a>
+                    <a href="/ImageGallery"  runat="server" id="hrfImgGallery"  class="MenuLink FadeOnHover">גלרית תמונות</a>
                       
                     </div>
                     <div class="MenuElement" style="width:70px;">
-                    <a href="VideoGallery.aspx"  runat="server" id="hrfVideoGallery"  class="MenuLink FadeOnHover">וידאו</a>
+                    <a href="/VideoGallery"  runat="server" id="hrfVideoGallery"  class="MenuLink FadeOnHover">וידאו</a>
                      
                     </div>
                     <div class="MenuElement" style="width:100px;">
-                    <a href="DayFlowSelection.aspx"  runat="server" id="hrfDayFlowSelection"  class="MenuLink FadeOnHover">מהלך היום</a>
+                    <a href="/DayFlowSelection"  runat="server" id="hrfDayFlowSelection"  class="MenuLink FadeOnHover">מהלך היום</a>
                        
                     </div>
                     <div class="MenuElement" style="width:90px;">
-                     <a href="About.aspx" runat="server" id="hrfAbout"  class="MenuLink FadeOnHover">אודותינו</a>
+                     <a href="/About" runat="server" id="hrfAbout"  class="MenuLink FadeOnHover">אודותינו</a>
                       
                     </div>
                     <div class="MenuElement" style="width:125px;">
-                      <a href="OtherServices.aspx"  runat="server" id="hrfOtherServices"  class="MenuLink FadeOnHover">שירותים נוספים</a>
+                      <a href="/OtherServices"  runat="server" id="hrfOtherServices"  class="MenuLink FadeOnHover">שירותים נוספים</a>
                      
                     </div>
                     <div class="MenuElement" style="width:105px;">
-                       <a href="Files.aspx" runat="server" id="hrfFiles"  class="MenuLink FadeOnHover">קבצים להורדה</a>
+                       <a href="/Files" runat="server" id="hrfFiles"  class="MenuLink FadeOnHover">קבצים להורדה</a>
                     
                     </div>
                 </div>

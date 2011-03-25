@@ -16,7 +16,7 @@
 
 <div class="ContentBlock" style="padding-left:30px;">
 <div class="Border" style="width:303px;">
-<img src="Images/DayFlow/Common/1c.jpg" /> </div>
+<img src="/Images/DayFlow/Common/1c.jpg" /> </div>
 <p>
 <b><span>צילומי
 איפור וצילומי חוץ</span></b>
@@ -34,7 +34,7 @@
 </div>
 <div class="ContentBlock">
 <div class="Border" style="width:303px;">
-<img src="Images/DayFlow/Common/2c.jpg" /></div>
+<img src="/Images/DayFlow/Common/2c.jpg" /></div>
 <p><b><span>קבלת פנים</span></b>
 <br />
 <span>נתכנס כשעה
@@ -48,7 +48,7 @@
 </div>
 <div class="ContentBlock" style="padding-left:30px;height:150px;">
 <div class="Border" style="width:303px;">
-<img src="Images/DayFlow/Common/3c.jpg" /> </div></p>
+<img src="/Images/DayFlow/Common/3c.jpg" /> </div></p>
 
 
 <p><b><span>חופה</span></b>
@@ -60,7 +60,7 @@
 </div>
 <div class="ContentBlock" style="height:150px;">
 <div class="Border" style="width:303px;">
-<img src="Images/DayFlow/Common/4c.jpg" /> </div>
+<img src="/Images/DayFlow/Common/4c.jpg" /> </div>
 
 
 
@@ -77,7 +77,7 @@
 </div>
 <%--<div class="ContentBlock" style="height:150px;">
 <div class="Border" style="width:303px;">
-<img src="Images/DayFlow/Common/4c.jpg" /> </div>
+<img src="/Images/DayFlow/Common/4c.jpg" /> </div>
 <p><b><span>סבב שולחנות</span></b><br />
 <span> יעשה עם הזוג או ע&quot;פ רשימת שולחנות עיקריים לצילום שישלחו מבעוד
 מועד</span>
