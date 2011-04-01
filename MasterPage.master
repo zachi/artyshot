@@ -17,9 +17,9 @@
     <div style="margin: 0 auto; width: 900px; direction: rtl;">
         <form id="form1" runat="server">
                 <div class="Menu">
-                    <a href="/Main"> <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
+                    <a href="/"> <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
                     <div class="MenuElement" style="width:65px;">
-                    <a href="/Main" runat="server" id="hrfMain" class="MenuLink FadeOnHover">ראשי</a> 
+                    <a href="/" runat="server" id="hrfMain" class="MenuLink FadeOnHover">ראשי</a> 
                     </div>
                     <div class="MenuElement" style="width:120px;">
                     <a href="/ImageGallery"  runat="server" id="hrfImgGallery"  class="MenuLink FadeOnHover">גלרית תמונות</a>
