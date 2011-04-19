@@ -1,0 +1,194 @@
+﻿body
+{
+    margin: 0px;
+    color: #808080; /*color:#9BAF3F;green */
+    font-family: Arial;
+    font-size: 14px;
+}
+a
+{
+    text-decoration: none;
+    color: #4f647c; 
+}
+img
+{
+    border-style: none;
+}
+.Footer
+{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.FooterTitle
+{
+}
+FooterTitle::-moz-selection
+{
+    background: Blue;
+    color: Gray;
+}
+
+FooterTitle::selection
+{
+    background: Blue;
+    color: Gray;
+}
+.Numbers
+{
+    font-size: 12px;
+    color:#383838;
+}
+.Logo
+{
+    float: right;
+    padding-left: 15px;
+}
+/************* Menu *****************/
+.Menu
+{
+    width: 900px;
+    height: 65px;
+    direction: rtl;
+    margin-bottom: 3px;
+}
+.MenuElement
+{
+    padding: 45px 0 0 0;
+    float: right;
+}
+
+.MenuLink
+{
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:8px;
+    padding:0 4px 0 4px;
+}
+.Black
+{
+    color: Black;
+}
+.Border
+{
+    border: 1px solid #CECECE;
+}
+.Content
+{
+    width: 900px;
+    height: 495px;
+    border: solid 1px #CECECE;
+}
+.Show
+{
+    display: inherit;
+}
+.Hide
+{
+    display: none;
+}
+.ProgressBar
+{
+    text-align: center;
+    direction: rtl;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: solid 2px grey;
+    width: 90px;
+    height: 25px;
+    color: Gray;
+}
+
+.Border
+{
+    border: 1px solid gray;
+    padding: 1px;
+    margin: 3px;
+}
+
+.LinkButtton
+{
+    cursor: hand;
+    cursor: pointer;
+    margin: 12px 0 12px 0;
+    text-align: center;
+}
+
+
+
+/******************** Video *********************/
+
+.Video
+{
+    direction: rtl;
+    padding: 20px;
+}
+.VideoThumbnails
+{
+    float: right;
+    margin: 0px 50px 0px 50px;
+}
+.VideoThumbnail
+{
+    width: 77px;
+    height: 60px;
+    margin-bottom: 6px;
+    border: solid 1px;
+    cursor: pointer;
+    cursor: hand;
+}
+.VideoThumbnailSelected
+{
+    margin-bottom: 4px !important;
+    border: solid 2px gray !important;
+}
+.VideoContainer
+{
+    float: right;
+    margin: 1px;
+}
+
+
+
+/******************** Day Flow styles *********************/
+
+.DayFlowTitle
+{
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+.DayFlow
+{
+    padding: 15px;
+    padding-right:35px;
+}
+
+.TextContainer
+{
+    margin: 0px auto;
+    text-align: right;
+    line-height: 20px;
+}
+
+/************* Main styles *****************/
+
+.CycledImageContainer
+{
+    position: relative;
+    width:898px;
+    height:493px;
+    margin: 1px;
+}
+
+.TextContainerFrame
+{
+    border: 1px solid #CECECE;
+    margin: 150px auto 0;
+    width: 400px;
+    height: 190px;
+    font-size: 16px;
+}
+
+

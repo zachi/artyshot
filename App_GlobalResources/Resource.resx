@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>&lt;p&gt;"היום..נעשה משהו בלתי בלתי נשכח, שישאיר זיכרון של שמחה מבורך..."(אהוד בנאי)&lt;/p&gt;&lt;p&gt;&lt;span&gt;מזל טוב בהגיעכם ליום המיוחל והמיוחד, היום בו אתם ממסדים את אהבתכם ומכריזים קבל עם ועולם כי &lt;/span&gt;&lt;br&gt;&lt;span&gt;הינכם מיועדים זו לזה מתוך האהבה שאין יפה וחזקה ממנה. ביום זה בו אתם הופכים לזוג, הוא יום של אור &lt;/span&gt;&lt;br&gt;&lt;span&gt;ושמחה בו אתם מתברכים ומברכים את הטוב.. תודה על הברכה שהתברכנו בה לשמח חתן וכלה ביום &lt;/span&gt;&lt;br&gt;&lt;span&gt;חתונתם. ביום זה אנו מנסים ללכוד את כל הרגעים המנצחים המתרחשים באירוע שלכם. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;את רגעים מנצחים ייסדו מיטל ויואב גנוט בשנת 2005, החברה צברה ניסיון רב בתחום צילום האירועים , מה שעוזר להפיק את הצילום במהלך האירוע בצורה נינוחה ונעימה , ללא  הפרעות לבעלי השמחה והחוגגים. אנו דוגלים בצילום לא מתערב , כזה שמשלב הרבה עירנות ורגישות עם הרבה סגנון ויצירתיות במהלך הצילום - ולאחריו שלב העיבוד והעריכה -עיצוב האלבום\סרט חתונה  ועד שלב הכריכה.  מעבר להכרח הבסיסי של להתפרנס בכבוד, אנו גם נהנים מהזכות ללוות ולשמח את החתן וכלה ביום מיוחד כל כך. אנו ניזונים מהרבה ביקורות טובות שמחזקות אותנו ונותנות לנו את תחושת הסיפוק והנחת מהעבודה המיוחדת הזו. החברה עובדת עם הצלמים הטובים ביותר, המתאימים לאופי המיוחד של חברתנו. ציוד הצילום שברשותנו הינו מהחדישים והמקצועיים ביותר.כל אלה בשילוב עם עיצוב בגרפיקה ממוחשבת , כריכייה פרטית, וחדרי עריכה מצליחים לייצר ניחוח שונה של אלבומים\סרטים מעוצבים  בראש צעיר ובסגנון ייחודי ואותנטי עם הרבה מקוריות ורגש עד הפרטים הקטנים.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>&lt;span style="font-weight:bold;color:#383838;"&gt;הגליל&amp;nbsp;&lt;span class="Numbers"&gt;13&lt;/span&gt; כפר&amp;nbsp;סבא&lt;/span&gt;</value>
+  </data>
+  <data name="AlbumsOrderForm" xml:space="preserve">
+    <value>טופס הזמנת אלבומים -</value>
+  </data>
+  <data name="BrideAndGroomPhotos" xml:space="preserve">
+    <value>&lt;p&gt;
+                &lt;span class="DayFlowTitle"&gt;צילומי חתן כלה&lt;/span&gt; &lt;span&gt;הצילומים יחלו כשעתיים לפני הזמן
+                    שנקבע לקבלת הפנים בשעה הראשונה יצולמו הכלה והחתן, כל אחד בנפרד במקום שנקבע מראש
+                    ומקובל על כל הצדדים, צילומים אלו מאופיינים יותר כצילומי אופנה ומהווים מעבר לצילומי
+                    החובה כיף פתיחות ושחרור. &lt;/span&gt;
+            &lt;/p&gt;</value>
+  </data>
+  <data name="Dayflow_Athmosphere" xml:space="preserve">
+    <value>&lt;p&gt;
+                &lt;span&gt;אנו נדאג שהאוירה תהיה רגועה וחיובית, הצלמים יהיו נעימים וצנועים, הצילומים
+                    יהיו ספונטניים ואומנותיים והעיקר שלא יחסר דבר. &lt;/span&gt;
+            &lt;/p&gt;</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>meital@artyshot.co.il</value>
+  </data>
+  <data name="ImageGallery" xml:space="preserve">
+    <value>גלריית תמונות</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>ראשי</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>אודותינו</value>
+  </data>
+  <data name="Menu_DayFlowSelection" xml:space="preserve">
+    <value>מהלך היום</value>
+  </data>
+  <data name="Menu_Files" xml:space="preserve">
+    <value>קבצים להורדה</value>
+  </data>
+  <data name="Menu_OtherServices" xml:space="preserve">
+    <value>שירותים נוספים</value>
+  </data>
+  <data name="OtherServices" xml:space="preserve">
+    <value>&lt;p&gt;                &lt;span&gt;&lt;strong&gt;מחלקת צילום: &lt;/strong&gt;&lt;/span&gt;                &lt;br&gt;                &lt;span&gt;סטילס ווידאו, אירועים, חתונות, הריון, סטודיו.&lt;/span&gt;&lt;br&gt;                &lt;span&gt;&lt;strong&gt;מחלקת סינמה:&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;                &lt;span&gt;הפקת סרטונים קצרים ליום החתונה&lt;br&gt;                    הפקת סרטי תדמית לחברות                    &lt;/span&gt;&lt;br&gt;                &lt;span&gt;&lt;strong&gt;מחלקת גרפיקה:&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;                &lt;span&gt;אלבומים – מעוצבים/ דיגיטליים&lt;br&gt;עיצוב קטלוגים לחברות&lt;/span&gt;            &lt;/p&gt;</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>052-8789874</value>
+  </data>
+  <data name="PhotogrphyContractForm" xml:space="preserve">
+    <value>טופס חוזה צילומים -</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>וידאו</value>
+  </data>
+  <data name="VideoEditingForm" xml:space="preserve">
+    <value>טופס עריכת וידאו -</value>
+  </data>
+</root>

@@ -1,0 +1,66 @@
+﻿/******************** Img Gallery *********************/
+
+.ImgGalleryMainTable
+{
+    width: 890px;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ClickableImage
+{
+    cursor: pointer;
+    cursor: hand;
+    margin: 2px;
+}
+.SelectedImg
+{
+    border: solid 2px gray;
+    margin: 0px;
+}
+
+.TDLink
+{
+    padding: 0px;
+}
+
+
+.ScrollersContainer
+{
+    width: 79px;
+    padding: 11px 0 0 1px;
+    margin: 0 auto;
+}
+.Scroller
+{
+    display: block;
+    cursor: hand;
+    cursor: pointer;
+    margin: 0px auto;
+    height: 17px;
+    width: 15px;
+   
+}
+
+.ImgSkipper
+{
+}
+.ThumbnailsTableContainer
+{
+    height: 388px;
+    width: 128px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.DisplayedImageContainer
+{
+    width: 694px;
+    height:464px;
+    border: solid 1px #CECECE;
+    float:left;
+}
+.DisplayedImage
+{
+margin:2px;
+display:block;
+}

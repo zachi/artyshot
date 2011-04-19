@@ -1,0 +1,5 @@
+﻿handle 2 images in a row(not within its own div) 
+handle image within non blobk elements(a,td)
+catch upload finished event and replace old image on page
+show image dimentions on upload dialog
+load css from js
