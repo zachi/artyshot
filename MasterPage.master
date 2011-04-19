@@ -1,65 +1,80 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
+<%@ Register Src="~/Controls/EditableText/EditableText.ascx" TagPrefix="Custom" TagName="EditableText" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <meta name="description" content="רגעים מנצחים, חברה לצילום אירועים בבעלות מיטל גנוט ויואב גנוט" /> 
-    <meta name="keywords" content="צלמי חתונה,צלמי חתונות,צלמי אירועים,צילום אירועים,צילום סטילס,צילום וידאו,צילום חתונה,צילומי הריון,צלמת הריון,צלמת חתונה,צילומי ילדים,צלמי ילדים,צלמת ילדים,מיטל גנוט,מיטל כהן גנוט,מיטל ויואב גנוט,יואב גנוט,רגעים מנצחים,ארטי שוט" /> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-    <link rel="Stylesheet" type="text/css" href="/StyleSheet.css" />
-    <script type="text/javascript" src="/javascript/jquery-1.3.2.min.js"></script>
-    <script src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="/javascript/artyshot.js"></script>
+  <meta name="description" content="רגעים מנצחים, חברה לצילום אירועים בבעלות מיטל גנוט ויואב גנוט" />
+  <meta name="keywords" content="צלמי חתונה,צלמי חתונות,צלמי אירועים,צילום אירועים,צילום סטילס,צילום וידאו,צילום חתונה,צילומי הריון,צלמת הריון,צלמת חתונה,צילומי ילדים,צלמי ילדים,צלמת ילדים,מיטל גנוט,מיטל כהן גנוט,מיטל ויואב גנוט,יואב גנוט,רגעים מנצחים,ארטי שוט" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="Stylesheet" type="text/css" href="/StyleSheet/StyleSheet.css" />
+<%--  <link rel="Stylesheet" href="Javascript/jquery.dialog/ui-lightness/jquery-ui-1.8.11.custom.css" />--%>
+  <link rel="Stylesheet" href="/Javascript/jquery.dialog/smoothness/jquery-ui-1.8.11.custom.css" />
+  <%--<link rel="Stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/hot-sneaks/jquery-ui.css" />--%>
+  <script type="text/javascript" src="/Javascript/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="/Javascript/jquery.dialog/jquery-ui-1.8.11.custom.min.js"></script>
+  <script type="text/javascript" src="/javascript/artyshot.js"></script>
+  
+
 </head>
 <body>
-    <div style="margin: 0 auto; width: 900px; direction: rtl;">
-        <form id="form1" runat="server">
-                <div class="Menu">
-                    <a href="/"> <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
-                    <div class="MenuElement" style="width:65px;">
-                    <a href="/" runat="server" id="hrfMain" class="MenuLink FadeOnHover">ראשי</a> 
-                    </div>
-                    <div class="MenuElement" style="width:120px;">
-                    <a href="/ImageGallery"  runat="server" id="hrfImgGallery"  class="MenuLink FadeOnHover">גלרית תמונות</a>
-                      
-                    </div>
-                    <div class="MenuElement" style="width:70px;">
-                    <a href="/VideoGallery"  runat="server" id="hrfVideoGallery"  class="MenuLink FadeOnHover">וידאו</a>
-                     
-                    </div>
-                    <div class="MenuElement" style="width:100px;">
-                    <a href="/DayFlowSelection"  runat="server" id="hrfDayFlowSelection"  class="MenuLink FadeOnHover">מהלך היום</a>
-                       
-                    </div>
-                    <div class="MenuElement" style="width:90px;">
-                     <a href="/About" runat="server" id="hrfAbout"  class="MenuLink FadeOnHover">אודותינו</a>
-                      
-                    </div>
-                    <div class="MenuElement" style="width:125px;">
-                      <a href="/OtherServices"  runat="server" id="hrfOtherServices"  class="MenuLink FadeOnHover">שירותים נוספים</a>
-                     
-                    </div>
-                    <div class="MenuElement" style="width:105px;">
-                       <a href="/Files" runat="server" id="hrfFiles"  class="MenuLink FadeOnHover">קבצים להורדה</a>
-                    
-                    </div>
-                </div>
-                <asp:Panel ID="pnlContent" CssClass="Content" runat="server">
-                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
-                </asp:Panel>
-
-        <div class="Footer">
-            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>
-            <span class="FooterTitle">כתובת:&nbsp;</span><span style="font-weight:bold;color:#383838;">הגליל&nbsp;<span class="Numbers">13</span>&nbsp;כפר&nbsp;סבא&nbsp;&nbsp;</span> 
-            <span class="FooterTitle" >סלולארי:&nbsp;</span><span class="Numbers" style="font-weight:bold;">052-8789874</span>&nbsp;&nbsp;
-             <%--<span class="FooterTitle">פקס:&nbsp;</span><span class="Numbers" style="font-weight:bold;">077-3430007</span>&nbsp;&nbsp;--%>
-           <span class="FooterTitle">דוא"ל:&nbsp;</span><span class="Numbers" style="font-weight:bold;">meital@artyshot.co.il</span>&nbsp;&nbsp; 
-           </div>
-
-    </form>
+  <div style="margin: 0 auto; width: 900px; direction: rtl;">
+    <form id="form1" runat="server">
+      <div class="Menu">
+      <a href="/" style="float:right;">
+        <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
+      <div class="MenuElement" style="width: 65px;">
+        <a href="/" runat="server" id="hrfMain" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText2" runat="server" Resource="Main" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 120px;">
+        <a href="ImageGallery" runat="server" id="hrfImgGallery" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText3" runat="server" Resource="ImageGallery" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 70px;">
+        <a href="VideoGallery" runat="server" id="hrfVideoGallery" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText1" runat="server" Resource="Video" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 100px;">
+        <a href="DayFlowSelection" runat="server" id="hrfDayFlowSelection" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText6" runat="server" Resource="Menu_DayFlowSelection" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 90px;">
+        <a href="About" runat="server" id="hrfAbout" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="DayFlowSelection" runat="server" Resource="Menu_About" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 125px;">
+        <a href="OtherServices" runat="server" id="hrfOtherServices" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText4" runat="server" Resource="Menu_OtherServices" />
+        </a>
+      </div>
+      <div class="MenuElement" style="width: 105px;">
+        <a href="Files" runat="server" id="hrfFiles" class="MenuLink FadeOnHover">
+          <Custom:EditableText ID="EditableText5" runat="server" Resource="Menu_Files" />
+        </a>
+      </div>
     </div>
+      <asp:Panel ID="pnlContent" CssClass="Content" runat="server">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+    </asp:Panel>
+      <div class="Footer">
+      <%--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>--%>
+      <span class="FooterTitle">כתובת:&nbsp;</span>
+      <Custom:EditableText runat="server" Resource="Address" />
+      <span class="FooterTitle">סלולארי:&nbsp;</span><span class="Numbers" style="font-weight: bold;"><Custom:EditableText
+        runat="server" Resource="Phone" />
+      </span>&nbsp;&nbsp; <span class="FooterTitle">דוא"ל:&nbsp;</span><span class="Numbers"
+        style="font-weight: bold;"><Custom:EditableText ID="EditableText7" runat="server"
+          Resource="Email" />
+      </span>&nbsp;&nbsp;
+    </div>
+    </form>
+  </div>
 </body>
 </html>
