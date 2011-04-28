@@ -13,27 +13,32 @@ using System.Xml.Linq;
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
-    protected void Page_Load(object sender, EventArgs e)
+  private static bool AllowAdministration
+  {
+    get
     {
-
-        if (Request.Url.AbsoluteUri.Contains("arty-shot.com"))
-        {
-          Response.Status = "301 Moved Permanently";
-          Response.AddHeader("Location", Request.Url.AbsoluteUri.Replace("arty-shot.com", "artyshot.co.il"));
-          return;
-        }
-        string sPageName = Request.Url.Segments[Request.Url.Segments.Length - 1];
-        HtmlControl c = (HtmlControl)FindControl("hrf" + sPageName.Replace(".aspx", ""));
-        if (c != null)
-            c.Attributes["class"] = c.Attributes["class"].Replace("FadeOnHover", "Black");
+      return HttpContext.Current.User.Identity.IsAuthenticated;
     }
-    protected override void OnPreRender(EventArgs e)
+  }
+  protected void Page_Load(object sender, EventArgs e)
+  {
+
+
+    if (Request.Url.AbsoluteUri.Contains("arty-shot.com"))
     {
-      base.OnPreRender(e);
-      //ScriptManager.RegisterClientScriptInclude(this, typeof(EditableText), "AllowEditableImage.js", "/Controls/EditableImage/EditableImage.js");
-      ScriptManager.RegisterClientScriptBlock(this, typeof(EditableText), "AllowEditableImage.css", "<link rel='stylesheet' href='/Controls/EditableImage/EditableImage.css' type='text/css' />", false);
-
-   //    <script type="text/javascript" src="/Controls/EditableImage/EditableImage.js"></script>
-   //
+      Response.Status = "301 Moved Permanently";
+      Response.AddHeader("Location", Request.Url.AbsoluteUri.Replace("arty-shot.com", "artyshot.co.il"));
+      return;
     }
+    string sPageName = Request.Url.Segments[Request.Url.Segments.Length - 1];
+    HtmlControl c = (HtmlControl)FindControl("hrf" + sPageName.Replace(".aspx", ""));
+    if (c != null)
+      c.Attributes["class"] = c.Attributes["class"].Replace("FadeOnHover", "Black");
+  }
+  protected override void OnPreRender(EventArgs e)
+  {
+    base.OnPreRender(e);
+    if (AllowAdministration)
+      this.form1.Controls.Add(new Literal() { Text = "<script type='text/javascript' src='/Controls/EditableImage/EditableImage.js'></script>" });
+  }
 }

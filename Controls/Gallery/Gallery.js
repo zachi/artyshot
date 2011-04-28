@@ -4,7 +4,11 @@
 
 $(document).ready(function ()
 {
-  ChangeCategory('Common')
+  $('#ThumbnailsTableContainer').bind('mousewheel', function (event, delta)
+  {
+    ScrollDelta(-delta);
+    return false;
+  });
 });
 
 function CreateImgElement(row, column, CategoryName)
@@ -66,20 +70,34 @@ function GetNumberOfRows()
 
 function ChangeImage(eventSrc)
 {
+
   src = eventSrc.src.replace('/Thumbnails', '');
-  $(".DisplayedImage").fadeOut(200, function ()
-  {
-    $(".DisplayedImage").attr('src', src).bind('readystatechange load', function ()
+  $(".DisplayedImage").hide()
+    .load(function ()
     {
-      //if (this.complete) 
-      $(this).fadeIn(400);
-    });
-  });
-  //    src = eventSrc.src.replace('/Thumbnails', '');
-  //    $(".DisplayedImage").attr('src', src);
+      $(this).fadeIn();
+    })
+    .attr('src', src)
 
 }
+//var scrollDelta = 0;
+function ScrollDelta(scrollDelta)
+{
+  var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
+  var nCurrentScroll = thumbnailsTableContainer.scrollTop();
+  var nContentHeight = parseInt(jQuery('#ThumbnailsTable').css('height').replace('px', ''));
+  var nContainerHeight = parseInt(thumbnailsTableContainer.css('height').replace('px', ''));
+  var nMaxScroll = nContentHeight - nContainerHeight;
+  if (scrollDelta == 0)
+    return;
+  var nAdditionalScrollSize = 40 * scrollDelta;
+  //scrollDelta = 0;
+  //$('#galleryLog').html($('#galleryLog').html() + '<br />nAdditionalScrollSize: ' + nAdditionalScrollSize);
 
+  //thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll + nAdditionalScrollSize }, 40 );
+  thumbnailsTableContainer.scrollTop(nCurrentScroll + nAdditionalScrollSize);
+  //thumbnailsTableContainer.scrollTo({ top: nCurrentScroll + nAdditionalScrollSize, left: 0 }, 50, { queue: true }); //scroll one axis, then the other
+}
 function ScrollDown()
 {
   var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
@@ -95,6 +113,7 @@ function ScrollDown()
     nAdditionalScrollSize = nMaxScroll - nCurrentScroll;
   thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll + nAdditionalScrollSize }, 'slow');
 }
+
 function ScrollUp()
 {
 
@@ -107,6 +126,7 @@ function ScrollUp()
     nAdditionalScrollSize = nCurrentScroll;
   thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll - nAdditionalScrollSize }, 'slow');
 }
+
 function SkipImg(nImgsToSkip)
 {
   var selectedImg = jQuery('.SelectedImg');

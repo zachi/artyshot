@@ -23,7 +23,9 @@ public partial class EditableText : System.Web.UI.UserControl
   protected override void OnPreRender(EventArgs e)
   {
     base.OnPreRender(e);
-    //ScriptManager.RegisterClientScriptInclude(this, typeof(EditableText), "EditableText.js", "/Controls/EditableText/EditableText.js");
+    
+    if(!Readonly)
+      ScriptManager.RegisterClientScriptInclude(this, typeof(EditableText), "EditableText.js", "/Controls/EditableText/EditableText.js");
     
   }
   protected void Page_Load(object sender, EventArgs e)

@@ -8,16 +8,24 @@ using System.Web.UI.WebControls;
 public partial class Gallery : System.Web.UI.UserControl
 {
   public string ThumbnailsFolderName { get; set; }
-  protected override void OnPreRender(EventArgs e)
+  public string LoadGalleryJS
   {
-    base.OnPreRender(e);
-
-    string sLoadGalleryJS = @" $(document).ready(function() {
+    get
+    {
+      return @" $(document).ready(function() {
                                         ChangeCategory('" + ThumbnailsFolderName + @"')
                                     });
                             ";
-    //ScriptManager.RegisterClientScriptInclude(this, typeof(Gallery), "galleryJs", TemplateSourceDirectory + "/Gallery.js");
-    //ScriptManager.RegisterClientScriptBlock(this, typeof(Gallery), "key", sLoadGalleryJS, true);
+    }
+  }
+  
+  protected override void OnPreRender(EventArgs e)
+  {
+    base.OnPreRender(e);
+    ScriptManager.RegisterClientScriptInclude(this, typeof(Gallery), "galleryJs", "/Controls/Gallery/Gallery.js");
+    ScriptManager.RegisterClientScriptInclude(this, typeof(Gallery), "gallery.mousewheel.js", "/Controls/Gallery/jquery.mousewheel.min.js");
+    ScriptManager.RegisterClientScriptBlock(this, typeof(Gallery), "gallery.css", "<link rel='Stylesheet' type='text/css' href='/Controls/Gallery/Gallery.css' />", false);
+    ScriptManager.RegisterClientScriptBlock(this, typeof(Gallery), "gallery.load.js", LoadGalleryJS, true);
   }
   protected void Page_Load(object sender, EventArgs e)
   {

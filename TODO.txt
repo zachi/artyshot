@@ -1,11 +1,5 @@
-﻿
-
-***************ImgGallery*********************
- 
-
- - gallery scrolling
- - gallery change image animation
- - Day flow arrangement
- - IE menue padding left hover issue
- - remove MDF db
-
+﻿ - IE issue with loading Gallery.css
+ - handle 2 images in a row(not within its own div) 
+ - show image dimentions on upload dialog  
+ - design login page
+ - Remove IE static scroll 
