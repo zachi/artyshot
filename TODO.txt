@@ -1,5 +1,2 @@
-﻿ - IE issue with loading Gallery.css
- - handle 2 images in a row(not within its own div) 
- - show image dimentions on upload dialog  
- - design login page
- - Remove IE static scroll 
+﻿ - handle 2 images in a row(not within its own div) 
+ - check dialog buttons and text style(too big)

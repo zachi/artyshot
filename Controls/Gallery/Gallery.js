@@ -4,13 +4,17 @@
 
 $(document).ready(function ()
 {
-  $('#ThumbnailsTableContainer').bind('mousewheel', function (event, delta)
+  $('#ThumbnailsContainer').bind('mousewheel', function (event, delta)
   {
-    ScrollDelta(-delta);
+    var nScrollDelta = normalizeDelta(delta)
+    ScrollDelta(nScrollDelta);
     return false;
   });
 });
-
+function normalizeDelta(delta)
+{
+  return delta > 0 ? -43 : 43;
+}
 function CreateImgElement(row, column, CategoryName)
 {
   var imgName = ((row * 2) + column);
@@ -22,43 +26,36 @@ function CreateImgElement(row, column, CategoryName)
     var eventElement = event.srcElement != null ? event.srcElement : event.target;
     ChangeImage(eventElement);
   })
-
   return newImg;
 }
-
 function ChangeCategory(CategoryName)
 {
-  var Table = $('<table id="ThumbnailsTable" cellpadding="0" cellspacing="0" />');
+  var thumbnails = $('<ul id="Thumbnails"  />');
   var nNumberOfRows = GetNumberOfRows();
   for (var r = 0; r <= nNumberOfRows; r++)
   {
-    var tr = $('<tr>');
+    var row = $('<li><ul>');
     for (var c = 1; c <= 2; c++)
     {
       var img = CreateImgElement(r, c, CategoryName);
-      var td = $('<td class="TDLink" >');
-      td.append(img)
-      tr.append(td);
+      var thumbnailContainer = $('<li class="ThumbnailContainer" >');
+      thumbnailContainer.append(img)
+      row.find('ul').append(thumbnailContainer);
     }
-    tr.appendTo(Table);
+    //tr2.appendTo(tr1);
+    row.appendTo(thumbnails);
   }
 
-  var ThumbnailsTableContainer = $('#ThumbnailsTableContainer');
-  ThumbnailsTableContainer.empty();
-  Table.appendTo(ThumbnailsTableContainer);
+  var ThumbnailsContainer = $('#ThumbnailsContainer');
+  ThumbnailsContainer.empty();
+  thumbnails.appendTo(ThumbnailsContainer);
 
-  //    var keepScroll = true;
-  //    Table.bind('mousedown', function () {
-  //      while (keepScroll)
-  //        ScrollDown();
-  //    });
-  //    Table.bind('mouseup', function () { keepScroll = false; });
-  //Table.bind('scroll', function () { alert('scroll'); });
   //select first thumbnail as DisplayedImage
-  //ChangeImage($('#ThumbnailsTable tbody img:first').get(0))
-  //$('#ThumbnailsTable tbody img:first').trigger('click')
+  $('#Thumbnails img:first').trigger('click')
 
 }
+
+
 
 function GetNumberOfRows()
 {
@@ -67,66 +64,6 @@ function GetNumberOfRows()
     return 19;
   return (parseInt(sNumberOfFiles) / 2) - 1;
 }
-
-function ChangeImage(eventSrc)
-{
-
-  src = eventSrc.src.replace('/Thumbnails', '');
-  $(".DisplayedImage").hide()
-    .load(function ()
-    {
-      $(this).fadeIn();
-    })
-    .attr('src', src)
-
-}
-//var scrollDelta = 0;
-function ScrollDelta(scrollDelta)
-{
-  var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
-  var nCurrentScroll = thumbnailsTableContainer.scrollTop();
-  var nContentHeight = parseInt(jQuery('#ThumbnailsTable').css('height').replace('px', ''));
-  var nContainerHeight = parseInt(thumbnailsTableContainer.css('height').replace('px', ''));
-  var nMaxScroll = nContentHeight - nContainerHeight;
-  if (scrollDelta == 0)
-    return;
-  var nAdditionalScrollSize = 40 * scrollDelta;
-  //scrollDelta = 0;
-  //$('#galleryLog').html($('#galleryLog').html() + '<br />nAdditionalScrollSize: ' + nAdditionalScrollSize);
-
-  //thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll + nAdditionalScrollSize }, 40 );
-  thumbnailsTableContainer.scrollTop(nCurrentScroll + nAdditionalScrollSize);
-  //thumbnailsTableContainer.scrollTo({ top: nCurrentScroll + nAdditionalScrollSize, left: 0 }, 50, { queue: true }); //scroll one axis, then the other
-}
-function ScrollDown()
-{
-  var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
-  var nCurrentScroll = thumbnailsTableContainer.scrollTop();
-  var nContentHeight = parseInt(jQuery('#ThumbnailsTable').css('height').replace('px', ''));
-  var nContainerHeight = parseInt(thumbnailsTableContainer.css('height').replace('px', ''));
-  var nMaxScroll = nContentHeight - nContainerHeight;
-  var nAdditionalScrollSize = 172;
-
-  if (nCurrentScroll >= nMaxScroll)
-    return;
-  else if ((nCurrentScroll + nAdditionalScrollSize) > nMaxScroll)
-    nAdditionalScrollSize = nMaxScroll - nCurrentScroll;
-  thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll + nAdditionalScrollSize }, 'slow');
-}
-
-function ScrollUp()
-{
-
-  var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
-  var nCurrentScroll = thumbnailsTableContainer.scrollTop();
-  var nAdditionalScrollSize = 170;
-  if (nCurrentScroll <= 0)
-    return;
-  else if ((nCurrentScroll - nAdditionalScrollSize) < 0)
-    nAdditionalScrollSize = nCurrentScroll;
-  thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll - nAdditionalScrollSize }, 'slow');
-}
-
 function SkipImg(nImgsToSkip)
 {
   var selectedImg = jQuery('.SelectedImg');
@@ -137,4 +74,81 @@ function SkipImg(nImgsToSkip)
   if (nextImg.length == 0)
     nextImg = jQuery('#Thumbnail_1')
   nextImg.trigger('click')
+}
+function ChangeImage(eventSrc)
+{
+  src = eventSrc.src.replace('/Thumbnails', '');
+  $(".DisplayedImage").hide()
+    .load(function ()
+    {
+      $(this).fadeIn();
+    })
+    .attr('src', src)
+}
+
+var intervalID = 0;
+
+function ScrollContinuousStart(scrollFunc)
+{
+  intervalID = setInterval(scrollFunc, 30)
+  //scrollFunc();
+}
+
+function ScrollContinuousStop()
+{
+  window.clearInterval(intervalID);
+}
+
+function ScrollDown()
+{
+  var thumbnailsContainer = jQuery('#ThumbnailsContainer');
+  var nCurrentScroll = thumbnailsContainer.scrollTop();
+  var nContentHeight = parseInt(jQuery('#Thumbnails').css('height').replace('px', ''));
+  var nContainerHeight = parseInt(thumbnailsContainer.css('height').replace('px', ''));
+  var nMaxScroll = nContentHeight - nContainerHeight;
+  var nAdditionalScrollSize = 10;
+
+  if (nCurrentScroll >= nMaxScroll)
+    return;
+  if ((nCurrentScroll + nAdditionalScrollSize) > nMaxScroll)
+    nAdditionalScrollSize = nMaxScroll - nCurrentScroll;
+  thumbnailsContainer.scrollTop(nCurrentScroll + nAdditionalScrollSize);
+}
+
+function ScrollUp()
+{
+
+  var thumbnailsContainer = jQuery('#ThumbnailsContainer');
+  var nCurrentScroll = thumbnailsContainer.scrollTop();
+  var nAdditionalScrollSize = 15;
+  if (nCurrentScroll <= 0)
+    return;
+  else if ((nCurrentScroll - nAdditionalScrollSize) < 0)
+    nAdditionalScrollSize = nCurrentScroll;
+  thumbnailsContainer.scrollTop(nCurrentScroll - nAdditionalScrollSize);
+}
+//function ScrollDownEase()
+//{
+//  var thumbnailsTableContainer = jQuery('#ThumbnailsTableContainer');
+//  var nCurrentScroll = thumbnailsTableContainer.scrollTop();
+//  var nContentHeight = parseInt(jQuery('#ThumbnailsTable').css('height').replace('px', ''));
+//  var nContainerHeight = parseInt(thumbnailsTableContainer.css('height').replace('px', ''));
+//  var nMaxScroll = nContentHeight - nContainerHeight;
+//  var nAdditionalScrollSize = 15;
+
+//  if (nCurrentScroll >= nMaxScroll)
+//    return;
+//  if ((nCurrentScroll + nAdditionalScrollSize) > nMaxScroll)
+//    nAdditionalScrollSize = nMaxScroll - nCurrentScroll;
+//  thumbnailsTableContainer.animate({ scrollTop: nCurrentScroll + nAdditionalScrollSize }, 200);
+//}
+
+
+function ScrollDelta(nScrollDelta)
+{
+  if (nScrollDelta == 0)
+    return;
+  var thumbnailsContainer = jQuery('#ThumbnailsContainer');
+  var nCurrentScroll = thumbnailsContainer.scrollTop();
+  thumbnailsContainer.scrollTop(nCurrentScroll + nScrollDelta);
 }

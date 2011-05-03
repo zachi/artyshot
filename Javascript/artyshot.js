@@ -1,5 +1,23 @@
-﻿
-//google.load("jqueryui", "1.5.2");
+﻿/***********************************************************************************/
+/*********************  Set CTRL+l for Login page redirection  *********************/
+/***********************************************************************************/
+var isCtrl = false;
+$(document).keyup(function (e)
+{
+  if (e.which == 17) isCtrl = false;
+}).keydown(function (e)
+{
+  if (e.which == 17) isCtrl = true;
+  if (e.which == 76 && isCtrl == true)
+  {
+    window.location.replace("/Pages/Login.aspx");
+    return false;
+  }
+});
+
+
+
+
 jQuery(document).ready(function ()
 {
   $('.FadeOnHover').hover(

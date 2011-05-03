@@ -38,7 +38,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
   protected override void OnPreRender(EventArgs e)
   {
     base.OnPreRender(e);
+
     if (AllowAdministration)
+    {
       this.form1.Controls.Add(new Literal() { Text = "<script type='text/javascript' src='/Controls/EditableImage/EditableImage.js'></script>" });
+    }
+   
   }
 }

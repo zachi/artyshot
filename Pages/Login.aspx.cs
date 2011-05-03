@@ -25,5 +25,6 @@ public partial class Login : System.Web.UI.Page
     protected void Logoff_Click(object sender, EventArgs e)
     {
       FormsAuthentication.SignOut();
+      Response.Redirect("\\");
     }
 }

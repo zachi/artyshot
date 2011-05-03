@@ -18,64 +18,71 @@
   <script type="text/javascript" src="/Javascript/jquery.dialog/jquery-ui-1.8.11.custom.min.js"></script>
   <script type="text/javascript" src="/javascript/artyshot.js"></script>
   
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
 </head>
 <body>
   <div style="margin: 0 auto; width: 900px; direction: rtl;">
     <form id="form1" runat="server">
-      <div class="Menu">
-      <a href="/" style="float:right;">
-        <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" /></a>
-      <div class="MenuElement" style="width: 65px;">
+      <header class="Menu">
+        <div class="MenuElement" style="width: 170px;position:relative;margin-left:15px;">
+          <a href="/" style="left: 0; top: 0; position: absolute;">
+            <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" />
+          </a>
+        </div>
+        <div class="MenuElement" style="width: 65px;">
         <a href="/" runat="server" id="hrfMain" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText2" runat="server" Resource="Main" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 120px;">
+        <div class="MenuElement" style="width: 120px;">
         <a href="ImageGallery" runat="server" id="hrfImgGallery" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText3" runat="server" Resource="ImageGallery" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 70px;">
+        <div class="MenuElement" style="width: 70px;">
         <a href="VideoGallery" runat="server" id="hrfVideoGallery" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText1" runat="server" Resource="Video" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 100px;">
+        <div class="MenuElement" style="width: 100px;">
         <a href="DayFlowSelection" runat="server" id="hrfDayFlowSelection" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText6" runat="server" Resource="Menu_DayFlowSelection" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 90px;">
+        <div class="MenuElement" style="width: 90px;">
         <a href="About" runat="server" id="hrfAbout" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="DayFlowSelection" runat="server" Resource="Menu_About" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 125px;">
+        <div class="MenuElement" style="width: 125px;">
         <a href="OtherServices" runat="server" id="hrfOtherServices" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText4" runat="server" Resource="Menu_OtherServices" />
         </a>
       </div>
-      <div class="MenuElement" style="width: 105px;">
+        <div class="MenuElement" style="width: 105px;">
         <a href="Files" runat="server" id="hrfFiles" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText5" runat="server" Resource="Menu_Files" />
         </a>
       </div>
-    </div>
+        <div style="width:0; height:0; clear:both;"></div>
+      </header>
       <asp:Panel ID="pnlContent" CssClass="Content" runat="server">
-      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-      </asp:ContentPlaceHolder>
-    </asp:Panel>
-      <div class="Footer">
-      <%--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>--%>
-      <span class="FooterTitle">כתובת:&nbsp;</span>
-      <Custom:EditableText runat="server" Resource="Address" />
-      <span class="FooterTitle">סלולארי:&nbsp;</span><span class="Numbers" style="font-weight: bold;"><Custom:EditableText
-        runat="server" Resource="Phone" />
-      </span>&nbsp;&nbsp; <span class="FooterTitle">דוא"ל:&nbsp;</span><span class="Numbers"
-        style="font-weight: bold;"><Custom:EditableText ID="EditableText7" runat="server" Resource="Email" />
-      </span>
-    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      </asp:Panel>
+      <footer>
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>
+        <span class="FooterTitle">כתובת:&nbsp;</span>
+        <Custom:EditableText runat="server" Resource="Address" />
+        <span class="FooterTitle">סלולארי:&nbsp;</span><span class="Numbers" style="font-weight: bold;"><Custom:EditableText
+          runat="server" Resource="Phone" />
+        </span>&nbsp;&nbsp; <span class="FooterTitle">דוא"ל:&nbsp;</span><span class="Numbers"
+          style="font-weight: bold;"><Custom:EditableText ID="EditableText7" runat="server" Resource="Email" />
+        </span>
+      </footer>
     </form>
   </div>
 </body>

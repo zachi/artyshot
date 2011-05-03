@@ -14,11 +14,12 @@ img
 {
     border-style: none;
 }
-.Footer
+footer
 {
     text-align: center;
     font-size: 14px;
     padding-top: 5px;
+    display:block;
 }
 .FooterTitle
 {
@@ -41,8 +42,8 @@ FooterTitle::selection
 }
 .Logo
 {
-    /*float: right;*/
-    padding-left: 15px;
+    /*float: right;
+    padding-left: 15px;*/
 }
 /************* Menu *****************/
 .Menu
@@ -78,7 +79,6 @@ FooterTitle::selection
     width: 900px;
     height: 495px;
     border: solid 1px #CECECE;
-    padding-top: 10px;
 }
 .Show
 {
@@ -108,13 +108,7 @@ FooterTitle::selection
     margin: 3px;
 }
 
-.LinkButtton
-{
-    cursor: hand;
-    cursor: pointer;
-    margin: 12px 0 12px 0;
-    text-align: center;
-}
+
 
 
 

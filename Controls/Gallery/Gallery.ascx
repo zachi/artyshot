@@ -1,23 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Gallery.ascx.cs" Inherits="Gallery" %>
-<table cellpadding="0" cellspacing="0" class="ImgGalleryMainTable">
-  <tr>
-    <td valign="top" style="text-align: center;">
-      <div id="ThumbnailsTableContainer" class="ThumbnailsTableContainer">
-      </div>
-      <div class="ScrollersContainer">
-        <a title="גלול מעלה" onclick="ScrollUp()" class="Scroller FadeOnHover">▲</a> <a title="תמונה קודמת"
-          onclick="SkipImg(-1)" class="LinkButtton ImgSkipper FadeOnHover">►</a>&nbsp;&nbsp;&nbsp;
-        <a title="תמונה הבאה" onclick="SkipImg(1)" class="LinkButtton ImgSkipper FadeOnHover">
-          ◄</a> <a title="גלול מטה" onclick="ScrollDown()" class="Scroller FadeOnHover">▼</a>
-      </div>
-      
-    </td>
-    <td valign="top">
-      <div id="DisplayedImageContainer" class="DisplayedImageContainer">
-        <img id="imgDisplayedImage" class="DisplayedImage" src="/Images/ImgGallery/Common/1.jpg" runat="server" /></div>
-        
-    </td>
-  </tr>
-
-</table>
-<input type="hidden" class="hdnNumberOfFiles" id="hdnNumberOfFiles" runat="server" />
+<div class="ImageGallery">
+  <div class="ThumbnailsAndScrollers">
+    <div id="ThumbnailsContainer" class="ThumbnailsContainer">
+    </div>
+    <div class="ScrollersContainer">
+      <a title="גלול מעלה" onmousedown="ScrollContinuousStart(ScrollUp)" onmouseup="ScrollContinuousStop()" class="Scroller FadeOnHover">▲</a>
+      <a title="תמונה קודמת" onclick="SkipImg(-1)" class="LinkButtton ImgSkipper ImgSkipperRight FadeOnHover">►</a>&nbsp;&nbsp;&nbsp;
+      <a title="תמונה הבאה" onclick="SkipImg(1)" class="LinkButtton ImgSkipper FadeOnHover">◄</a>
+      <a title="גלול מטה" onmousedown="ScrollContinuousStart(ScrollDown)" onmouseup="ScrollContinuousStop()" class="Scroller FadeOnHover">▼</a>
+    </div>
+  </div>
+  <div id="DisplayedImageContainer" class="DisplayedImageContainer">
+    <img id="imgDisplayedImage" class="DisplayedImage" src="/Images/ImgGallery/Common/1.jpg" runat="server" />
+  </div>
+  <div style="clear:both;"></div>
+  <input type="hidden" class="hdnNumberOfFiles" id="hdnNumberOfFiles" runat="server" />
+</div>
