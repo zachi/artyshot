@@ -1,4 +1,4 @@
-﻿<%@ WebHandler Language="C#" Class="UrlRewriteHandler" %>
+﻿i<%@ WebHandler Language="C#" Class="UrlRewriteHandler" %>
 
 using System;
 using System.Web;
@@ -92,9 +92,9 @@ public class UrlRewriteHandler : IHttpHandler {
         context.Response.Redirect("");
         return;
       }
-    
-    
-      if (sRequestedUrl.Contains(".aspx"))
+
+
+      if (sRequestedUrl.Contains(".aspx") && sRequestedUrl.Contains(".htm"))
       {
        throw new Exception("url is not corrent: " + sRequestedUrl);
       }

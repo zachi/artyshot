@@ -18,11 +18,11 @@ function normalizeDelta(delta)
 function CreateImgElement(row, column, CategoryName)
 {
   var imgName = ((row * 2) + column);
-  var newImg = $('<img class="ClickableImage" id="Thumbnail_' + imgName + '" src="/Images/ImgGallery/' + CategoryName + '/Thumbnails/' + imgName + '.jpg" />');
+  var newImg = $('<img class="ThumbnailImage" id="Thumbnail_' + imgName + '" src="/Images/ImgGallery/' + CategoryName + '/Thumbnails/' + imgName + '.jpg" />');
   newImg.click(function (event)
   {
-    jQuery('.SelectedImg').removeClass('SelectedImg');
-    jQuery(this).addClass('SelectedImg');
+    jQuery('.SelectedThumbnail').removeClass('SelectedThumbnail');
+    jQuery(this).addClass('SelectedThumbnail');
     var eventElement = event.srcElement != null ? event.srcElement : event.target;
     ChangeImage(eventElement);
   })
@@ -66,10 +66,10 @@ function GetNumberOfRows()
 }
 function SkipImg(nImgsToSkip)
 {
-  var selectedImg = jQuery('.SelectedImg');
-  var sNextImgID = selectedImg.attr('id').replace('Thumbnail_', '');
+  var SelectedThumbnail = jQuery('.SelectedThumbnail');
+  var sNextImgID = SelectedThumbnail.attr('id').replace('Thumbnail_', '');
   var nNextImgID = parseInt(sNextImgID) + nImgsToSkip;
-  selectedImg.removeClass('SelectedImg');
+  SelectedThumbnail.removeClass('SelectedThumbnail');
   var nextImg = jQuery('#Thumbnail_' + nNextImgID)
   if (nextImg.length == 0)
     nextImg = jQuery('#Thumbnail_1')

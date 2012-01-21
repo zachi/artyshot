@@ -15,7 +15,7 @@
   
   
   <script type="text/javascript" src="/Javascript/jquery-1.5.1.min.js"></script>
-  <script type="text/javascript" src="/Javascript/jquery.dialog/jquery-ui-1.8.11.custom.min.js"></script>
+ <%-- <script type="text/javascript" src="/Javascript/jquery.dialog/jquery-ui-1.8.11.custom.min.js"></script>--%>
   <script type="text/javascript" src="/javascript/artyshot.js"></script>
   
   <!--[if IE]>

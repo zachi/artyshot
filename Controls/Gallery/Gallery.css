@@ -1,39 +1,61 @@
-﻿/******************** Img Gallery *********************/
-
-.ImageGallery
+﻿
+.stoa
 {
   width: 890px;
   margin: 0px auto;
   margin-bottom: 5px;
   margin-top: 19px;
+  direction:ltr;
 }
-.ClickableImage
+div.stoa-main
+{
+  border: solid 1px #CECECE;
+  height: 463px;
+  width: 694px;
+  float: left;
+  
+}
+
+div.stoa-navbar
+{
+  vertical-align: top;
+  margin: 0 55px 0 7px;
+  width: 128px;
+  float: left;
+}
+
+img.stoa-navbar-thumbnail-image
 {
   cursor: pointer;
   cursor: hand;
   margin: 2px;
+  width:60px;
+  
 }
-.SelectedImg
+img.stoa-navbar-thumbnail-image-selected
 {
   border: solid 2px gray;
   margin: 0px;
 }
-
-.ThumbnailContainer
+li.stoa-navbar-thumbnail-container
 {
   padding: 0px;
   display: inline;
   height: 43px;
 }
-
-
-.ScrollersContainer
+div.stoa-navbar-controllers
 {
   width: 79px;
   padding: 11px 0 0 1px;
   margin: 0 auto;
+  direction:rtl;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-.Scroller
+a.stoa-navbar-scroller-up, a.stoa-navbar-scroller-down
 {
   display: block;
   cursor: hand;
@@ -42,32 +64,27 @@
   height: 17px;
   width: 15px;
 }
-.ImgSkipper
+a.stoa-navbar-controllers-left, a.stoa-navbar-controllers-right 
 {
   display: inline-block;
   cursor: hand;
   cursor: pointer;
   text-align: center;
 }
-.ImgSkipperRight
+a.stoa-navbar-controllers-right
 {
-  margin-right: 17px;
+  margin-right: 16px;
 }
-.ThumbnailsContainer
+div.stoa-navbar-thumbnails-container
 {
   height: 388px;
   margin: 0px auto;
   overflow: hidden;
 }
-.DisplayedImageContainer
+img.stoa-main-image
 {
-  border: solid 1px #CECECE;
-  height: 463px;
-  width: 694px;
-  float: right;
-}
-.DisplayedImage
-{
+  cursor: pointer;
+  cursor: hand;
   margin: 2px;
   display: block;
 }
@@ -77,13 +94,6 @@ ul, li
   margin: 0;
   padding: 0;
   zoom: 1;
-}
-.ThumbnailsAndScrollers
-{
-  vertical-align: top;
-  margin: 0 7px 0 55px;
-  width: 128px;
-  float: right;
 }
 
 
