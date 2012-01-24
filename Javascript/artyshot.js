@@ -21,12 +21,11 @@ $(document).keyup(function (e)
 jQuery(document).ready(function ()
 {
   $('.FadeOnHover').hover(
-                function ()
-                {
-                  $(this).animate({ backgroundColor: '#EAEAEA', color: '#0a3768'}, { queue: false, duration: 500 });
+                function () {
+                  $(this).css({ backgroundColor: '#EAEAEA', color: '#0a3768'});
                 }, function ()
                 {
-                  $(this).animate({ backgroundColor: 'White', color: '#4f647c'}, { queue: false, duration: 500 });
+                  $(this).css({ backgroundColor: 'White', color: '#4f647c'});
                 });
 });
 
