@@ -8,7 +8,7 @@
 a
 {
     text-decoration: none;
-    color: #4f647c; 
+    color: #4f647c;
 }
 img
 {
@@ -19,7 +19,7 @@ footer
     text-align: center;
     font-size: 14px;
     padding-top: 5px;
-    display:block;
+    display: block;
 }
 .FooterTitle
 {
@@ -38,12 +38,11 @@ FooterTitle::selection
 .Numbers
 {
     font-size: 12px;
-    color:#383838;
+    color: #383838;
 }
 .Logo
 {
-    /*float: right;
-    padding-left: 15px;*/
+    /*float: right;     padding-left: 15px;*/
 }
 /************* Menu *****************/
 .Menu
@@ -63,8 +62,8 @@ FooterTitle::selection
 {
     font-size: 16px;
     font-weight: bold;
-    border-radius:3px;
-    padding:0 4px 0 4px;
+    border-radius: 3px;
+    padding: 0 4px 0 4px;
 }
 .Black
 {
@@ -157,7 +156,7 @@ FooterTitle::selection
 .DayFlow
 {
     padding: 15px;
-    padding-right:35px;
+    padding-right: 35px;
 }
 
 .TextContainer
@@ -172,8 +171,8 @@ FooterTitle::selection
 .CycledImageContainer
 {
     position: relative;
-    width:898px;
-    height:493px;
+    width: 898px;
+    height: 493px;
     margin: 1px;
 }
 
@@ -185,5 +184,4 @@ FooterTitle::selection
     height: 190px;
     font-size: 16px;
 }
-
 

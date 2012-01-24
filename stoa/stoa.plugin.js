@@ -115,6 +115,7 @@
         }
       })
     },
+    
     selectNextImage: function () {
       var selected = $('img.stoa-navbar-thumbnail-image-selected');
       var next = selected.next();
@@ -196,8 +197,7 @@
 
     },
 
-    scrollStarted: function()
-    {
+    scrollStarted: function(){
       console.log('scrollStarted:' + (self.scrollContinuousIntervalID != undefined && self.scrollContinuousIntervalID != 'undefined' && self.scrollContinuousIntervalID != -1))
       return self.scrollContinuousIntervalID != undefined && self.scrollContinuousIntervalID != 'undefined' && self.scrollContinuousIntervalID != -1;
     },
@@ -384,8 +384,8 @@
 
   });
 
+  $.fn.exists = function () {
+   return this.length !== 0;
+  }
 })(jQuery);
 
-$.fn.exists = function () {
-  return this.length !== 0;
-}
