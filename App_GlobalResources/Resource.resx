@@ -240,6 +240,9 @@
   <data name="Menu_DayFlowSelection" xml:space="preserve">
     <value>מהלך היום</value>
   </data>
+  <data name="Menu_FacebookLinks" xml:space="preserve">
+    <value>אנחנו בפייסבוק</value>
+  </data>
   <data name="Menu_Files" xml:space="preserve">
     <value>קבצים להורדה</value>
   </data>

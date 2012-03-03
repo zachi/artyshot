@@ -1,110 +1,110 @@
 ﻿body
 {
-    margin: 0px;
-    color: #808080; /*color:#9BAF3F;green */
-    font-family: Arial;
-    font-size: 14px;
+  margin: 0px;
+  color: #808080; /*color:#9BAF3F;green */
+  font-family: Arial;
+  font-size: 14px;
 }
 a
 {
-    text-decoration: none;
-    color: #4f647c;
+  text-decoration: none;
+  color: #4f647c;
 }
 img
 {
-    border-style: none;
+  border-style: none;
 }
 footer
 {
-    text-align: center;
-    font-size: 14px;
-    padding-top: 5px;
-    display: block;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+  display: block;
 }
 .FooterTitle
 {
 }
 FooterTitle::-moz-selection
 {
-    background: Blue;
-    color: Gray;
+  background: Blue;
+  color: Gray;
 }
 
 FooterTitle::selection
 {
-    background: Blue;
-    color: Gray;
+  background: Blue;
+  color: Gray;
 }
 .Numbers
 {
-    font-size: 12px;
-    color: #383838;
+  font-size: 12px;
+  color: #383838;
 }
 .Logo
 {
-    /*float: right;     padding-left: 15px;*/
+  /*float: right;     padding-left: 15px;*/
 }
 /************* Menu *****************/
 .Menu
 {
-    width: 900px;
-    height: 65px;
-    direction: rtl;
-    margin-bottom: 3px;
+  width: 900px;
+  height: 65px;
+  direction: rtl;
+  margin-bottom: 3px;
 }
 .MenuElement
 {
-    padding: 45px 0 0 0;
-    float: right;
+  padding: 45px 0 0 0;
+  float: right;
 }
 
 .MenuLink
 {
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 3px;
-    padding: 0 4px 0 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0 4px 0 4px;
 }
 .Black
 {
-    color: Black;
+  color: Black;
 }
 .Border
 {
-    border: 1px solid #CECECE;
+  border: 1px solid #CECECE;
 }
 .Content
 {
-    width: 900px;
-    height: 495px;
-    border: solid 1px #CECECE;
+  width: 900px;
+  height: 495px;
+  border: solid 1px #CECECE;
 }
 .Show
 {
-    display: inherit;
+  display: inherit;
 }
 .Hide
 {
-    display: none;
+  display: none;
 }
 .ProgressBar
 {
-    text-align: center;
-    direction: rtl;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border: solid 2px grey;
-    width: 90px;
-    height: 25px;
-    color: Gray;
+  text-align: center;
+  direction: rtl;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: solid 2px grey;
+  width: 90px;
+  height: 25px;
+  color: Gray;
 }
 
 .Border
 {
-    border: 1px solid gray;
-    padding: 1px;
-    margin: 3px;
+  border: 1px solid gray;
+  padding: 1px;
+  margin: 3px;
 }
 
 
@@ -115,32 +115,32 @@ FooterTitle::selection
 
 .Video
 {
-    direction: rtl;
-    padding: 20px;
+  direction: rtl;
+  padding: 20px;
 }
 .VideoThumbnails
 {
-    float: right;
-    margin: 0px 50px 0px 50px;
+  float: right;
+  margin: 0px 50px 0px 50px;
 }
 .VideoThumbnail
 {
-    width: 77px;
-    height: 60px;
-    margin-bottom: 6px;
-    border: solid 1px;
-    cursor: pointer;
-    cursor: hand;
+  width: 77px;
+  height: 60px;
+  margin-bottom: 6px;
+  border: solid 1px;
+  cursor: pointer;
+  cursor: hand;
 }
 .VideoThumbnailSelected
 {
-    margin-bottom: 4px !important;
-    border: solid 2px gray !important;
+  margin-bottom: 4px !important;
+  border: solid 2px gray !important;
 }
 .VideoContainer
 {
-    float: right;
-    margin: 1px;
+  float: right;
+  margin: 1px;
 }
 
 
@@ -149,48 +149,98 @@ FooterTitle::selection
 
 .DayFlowTitle
 {
-    font-weight: bold;
-    display: block;
-    font-size: 16px;
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
 }
 .DayFlow
 {
-    padding: 15px;
-    padding-right: 35px;
+  padding: 15px;
+  padding-right: 35px;
 }
 
 .TextContainer
 {
-    margin: 0px auto;
-    text-align: right;
-    line-height: 20px;
+  margin: 0px auto;
+  text-align: right;
+  line-height: 20px;
 }
 
 /************* Main styles *****************/
 
 .CycledImageContainer
 {
-    position: relative;
-    width: 898px;
-    height: 493px;
-    margin: 1px;
+  position: relative;
+  width: 898px;
+  height: 493px;
+  margin: 1px;
 }
 
 .TextContainerFrame
 {
-    border: 1px solid #CECECE;
-    margin: 150px auto 0;
-    width: 400px;
-    height: 190px;
-    font-size: 16px;
+  border: 1px solid #CECECE;
+  margin: 150px auto 0;
+  width: 400px;
+  height: 190px;
+  font-size: 16px;
 }
 
 iframe, header
 {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+.facebook-links
+{
+  background-image: url('/Images/FacebookLinks/facebook smaller.jpg');
+  border: none;
+}
+
+a.facebook-links
+{
+  display: inline-block;
+}
+
+a.facebook-links:hover
+{
+  opacity: 0.8;
+  filter: Alpha(Opacity=80);
+}
+
+
+#title
+{
+  width: 900px;
+  height: 150px;
+}
+
+#artyshot
+{
+  background-position: -324px -213px;
+  width: 214px;
+  height: 144px;
+  margin: 0 50px;
+}
+#arteshot
+{
+  background-position: -609px -217px;
+  width: 168px;
+  height: 141px;
+}
+#pnima
+{
+  background-position: -121px -217px;
+  width: 152px;
+  height: 140px;
+}
+#links
+{
+  margin: 0 auto;
+  width: 644px;
 }
