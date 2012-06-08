@@ -1,2 +1,5 @@
 ﻿ - handle 2 images in a row(not within its own div) 
  - check dialog buttons and text style(too big)
+
+
+
