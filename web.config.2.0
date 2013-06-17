@@ -65,6 +65,7 @@
             <error statusCode="404" redirect="FileNotFound.htm" />
         </customErrors>
         -->
+		 <customErrors mode="Off"/>
 
 
       <pages>

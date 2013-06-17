@@ -65,7 +65,7 @@
         </a>
       </div>
         <div class="MenuElement" style="width: 105px;">
-        <a href="Files" runat="server" id="hrfFiles" class="MenuLink FadeOnHover">
+        <a href="Files1" runat="server" id="hrfFiles" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText5" runat="server" Resource="Menu_Files" />
         </a>
       </div>

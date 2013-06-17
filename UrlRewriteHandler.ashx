@@ -8,9 +8,9 @@ public class UrlRewriteHandler : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
 
       string sRequestedUrl = context.Request.Url.Query.Replace("?404;", "");
-      if (sRequestedUrl == " http://localhost/")
+      if (sRequestedUrl.ToLower() == " http://artyshot.co.il/")
       {
-        context.Response.Redirect(" http://localhost/Arti-Shot/Pages/main.aspx");
+        context.Response.Redirect(" http://artyshot.co.il/Pages/main.aspx");
         return;
       }
       
