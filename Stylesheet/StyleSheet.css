@@ -244,3 +244,18 @@ a.facebook-links:hover
   margin: 0 auto;
   width: 644px;
 }
+
+
+.about-image{
+  width: 365px;
+margin: 1px 0px 0 1px;
+
+}
+
+.about-text
+{
+display: inline-block;
+width: 430px;
+vertical-align: top;
+margin:50px;
+}

@@ -4,8 +4,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-  <meta name="description" content="רגעים מנצחים, חברה לצילום אירועים בבעלות מיטל גנוט ויואב גנוט" />
-  <meta name="keywords" content="צלמי חתונה,צלמי חתונות,צלמי אירועים,צילום אירועים,צילום סטילס,צילום וידאו,צילום חתונה,צילומי הריון,צלמת הריון,צלמת חתונה,צילומי ילדים,צלמי ילדים,צלמת ילדים,מיטל גנוט,מיטל כהן גנוט,מיטל ויואב גנוט,יואב גנוט,רגעים מנצחים,ארטי שוט" />
+  <meta name="description" content="רגעים מנצחים, חברה לצילום אירועים בבעלות מיטל  כהן" />
+  <meta name="keywords" content="צלמי חתונה,צלמי חתונות,צלמי אירועים,צילום אירועים,צילום סטילס,צילום וידאו,צילום חתונה,צילומי הריון,צלמת הריון,צלמת חתונה,צילומי ילדים,צלמי ילדים,צלמת ילדים,מיטל כהן ,רגעים מנצחים,ארטי שוט" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   
   <link rel="Stylesheet" type="text/css" href="/StyleSheet/StyleSheet.css" />
@@ -76,7 +76,7 @@
         </asp:ContentPlaceHolder>
       </asp:Panel>
       <footer>
-        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:75px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2Frgym-mnzhym-zylwm-yrwym-wbwqym%2F176375862384967&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:81px; height:21px; vertical-align:bottom; float:right;" allowTransparency="true"></iframe>
         <span class="FooterTitle">כתובת:&nbsp;</span>
         <Custom:EditableText runat="server" Resource="Address" />
         <span class="FooterTitle">סלולארי:&nbsp;</span><span class="Numbers" style="font-weight: bold;"><Custom:EditableText
