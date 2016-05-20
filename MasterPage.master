@@ -34,33 +34,33 @@
             <img title="רגעים מנצחים" alt="רגעים מנצחים" class="Logo" src="/Images/logo_black_small.png" />
           </a>
         </div>
-        <div class="MenuElement" style="width: 140px;">
+        <div class="MenuElement" style="width: 160px; margin-right: 20px;">
         <a href="/" runat="server" id="hrfMain" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText2" runat="server" Resource="Main" />
         </a>
       </div>
-        <div class="MenuElement" style="width: 170px;">
+        <div class="MenuElement" style="width: 210px;">
         <a href="ImageGallery" runat="server" id="hrfImgGallery" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText3" runat="server" Resource="ImageGallery" />
         </a>
       </div>
-        <div class="MenuElement" style="width: 120px;">
+        <%--<div class="MenuElement" style="width: 120px;">
         <a href="VideoGallery" runat="server" id="hrfVideoGallery" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText1" runat="server" Resource="Video" />
         </a>
-      </div>
+      </div>--%>
 <%--        <div class="MenuElement" style="width: 100px;">
         <a href="DayFlowSelection" runat="server" id="hrfDayFlowSelection" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="EditableText6" runat="server" Resource="Menu_DayFlowSelection" />
         </a>
       </div>--%>
-        <div class="MenuElement" style="width: 120px;">
+        <div class="MenuElement" style="width: 170px;">
         <a href="About" runat="server" id="hrfAbout" class="MenuLink FadeOnHover">
           <Custom:EditableText ID="DayFlowSelection" runat="server" Resource="Menu_About" />
         </a>
       </div>
         <div class="MenuElement" style="width: 125px;">
-        <a href="FacebookLinks" id="hrfFacebookLinks" class="MenuLink FadeOnHover" runat="server" >
+        <a href="http://www.facebook.com/artyshot" id="hrfFacebookLinks" class="MenuLink FadeOnHover" runat="server" target="_blank" >
           <Custom:EditableText runat="server" Resource="Menu_FacebookLinks" />
         </a>
       </div>
